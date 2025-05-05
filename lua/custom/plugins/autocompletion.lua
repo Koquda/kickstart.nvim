@@ -57,10 +57,19 @@ return { -- Autocompletion
 
     appearance = {
       nerd_font_variant = 'mono',
+      ui = { border = 'rounded', highlight = 'PmenuSel', show_source = true },
     },
 
     completion = {
       documentation = { auto_show = false, auto_show_delay_ms = 500 },
+      menu = {
+        draw = {
+          columns = {
+            { 'label', 'label_description', gap = 1 },
+            { 'kind_icon', 'kind' },
+          },
+        },
+      },
     },
 
     sources = {
