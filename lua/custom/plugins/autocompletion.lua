@@ -57,7 +57,6 @@ return { -- Autocompletion
 
     appearance = {
       nerd_font_variant = 'mono',
-      ui = { border = 'rounded', highlight = 'PmenuSel', show_source = true },
     },
 
     completion = {
