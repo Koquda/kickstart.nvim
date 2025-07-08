@@ -1,6 +1,10 @@
 return {
   {
-    { 'github/copilot.vim' }, -- or zbirenbaum/copilot.lua
+    {
+      'github/copilot.vim',
+      priority = 1000,
+      name = 'Copilot',
+    },
   },
   {
     'CopilotC-Nvim/CopilotChat.nvim',
@@ -21,5 +25,9 @@ return {
       { '<leader>zo', ':CopilotChatOptimize<CR>', mode = 'v', desc = 'Optimize code' },
       { '<leader>zd', ':CopilotChatDocs<CR>', mode = 'v', desc = 'Generate Docs' },
     },
+  },
+  {
+    'giuxtaposition/blink-cmp-copilot',
+    name = 'Blink Copilot',
   },
 }
